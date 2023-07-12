@@ -106,3 +106,8 @@ function createLight(a) {
         div.style.marginLeft = randomLeft + "px"
         div.style.marginTop = randomTop + "px"
         div.style.filter = "blur(" + blurLv[blur] + "px" + ")"
+        div.style.animation = "moveLight " + moveTime + "s ease-in-out infinite";
+
+        container.appendChild(div);
+    }
+}
